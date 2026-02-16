@@ -13,7 +13,7 @@ def combine_audit_jsons(root_dir) -> List[Dict]:
     # Iterate through all .json files in subdirectories
     for json_file in path.glob('**/sample_size_calculation.json'):
         # Get the folder name (e.g., 'ex_00000') to use as a key
-        # Commenting out for now, may be useful later to index examples
+        # Commenting out for now, this may be useful later to index examples
         # folder_name = json_file.parent.name
 
         try:
@@ -59,8 +59,6 @@ def main():
     ap.add_argument("--seed", type=int, default=42)
     args = ap.parse_args()
 
-    # with open(args.in_json, "r", encoding="utf-8") as f:
-    #     records: List[Dict] = json.load(f)
     records = combine_audit_jsons(args.root_directory)
 
     rng = random.Random(args.seed)

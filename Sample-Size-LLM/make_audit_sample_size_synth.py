@@ -67,6 +67,7 @@ def calc_sample_size(
     }
 
 # Generator: population tab
+# I need to modify these names... maybe
 
 
 METRIC_NAMES = [
@@ -118,17 +119,14 @@ def make_population_df(rng: random.Random, n_metrics: int) -> pd.DataFrame:
             "Region": region,
             "Owner": owner,
             "Unit": unit,
-            "Q2_2024": round(q2, 2) if not is_count else q2,
-            "Q3_2024": round(q3, 2) if not is_count else q3,
+            "Q2": round(q2, 2) if not is_count else q2,
+            "Q3": round(q3, 2) if not is_count else q3,
             "SourceType": reported,
         })
 
     return pd.DataFrame(rows)
 
-
-# ----------------------------
-# Serialization for finetuning
-# ----------------------------
+# Serialization for fine-tuning
 
 def df_to_compact_csv(df: pd.DataFrame, max_rows: int = 200) -> str:
     df2 = df.head(max_rows)
