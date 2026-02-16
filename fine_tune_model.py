@@ -58,7 +58,7 @@ def main():
         gradient_accumulation_steps=args.grad_accum,
         # evaluation_strategy="epoch",
         save_strategy="epoch",
-        logging_steps=25,
+        logging_steps=10,
         bf16=torch.cuda.is_available(),
         fp16=False,
         packing=False,

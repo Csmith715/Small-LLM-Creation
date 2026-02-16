@@ -3,6 +3,15 @@
 The purpose of this project is to convert small tasks from agentic problems into viable small language models capable of
 performing at the same level of efficacy.
 
+## Setup
+
+```bash
+uv sync
+```
+To include Jupyter notebooks and development tools:
+```bash
+uv sync --extras dev
+```
 
 ## General Fine-Tuning Actions
 
