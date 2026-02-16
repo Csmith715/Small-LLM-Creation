@@ -22,7 +22,7 @@ For the Sample Size LLM example:
 python fine_tune_model.py \
 --model_id Qwen/Qwen2.5-1.5B-Instruct \
 --train_jsonl Sample-Size-LLM/train.jsonl \
---eval_jsonl Sample-Size-LLM/dev.jsonl
+--eval_jsonl Sample-Size-LLM/val.jsonl
 ```
 This will fine-tune the Qwen2.5 model on a previously created dataset.
 
