@@ -1,0 +1,16 @@
+{
+  "confidence_level": 0.9,
+  "z_value": 1.64485,
+  "tolerable_error": 0.1,
+  "assumed_p": 0.5,
+  "n0_unbounded": 67.63828806249998,
+  "population_size": 115,
+  "finite_population_corrected_n": 42.82358752748773,
+  "final_sample_size": 43,
+  "used_fpc": true,
+  "rounding": "ceil",
+  "formula_notes": {
+    "n0": "(Z^2 * p * (1-p)) / E^2",
+    "fpc": "(N * n0) / (N + n0 - 1)"
+  }
+}

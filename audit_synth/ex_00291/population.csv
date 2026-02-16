@@ -1,0 +1,70 @@
+Metric,Region,Owner,Unit,Q2_2024,Q3_2024,SourceType
+SAR Filing Timeliness,APAC,Risk Analytics,score,66,60,Estimated
+Case Backlog Volume,EMEA,Risk Analytics,score,79,83,Calculated
+Adverse Media Hits,LATAM,AML Investigations,%,94,90,Reported
+PEP Screening Hits,EMEA,AFC Ops,count,4941,4375,Reported
+KYC Exceptions Rate,APAC,Compliance,score,59,60,Reported
+Alert Clearance SLA Breaches,LATAM,AML Investigations,rate,75,81,Calculated
+False Positive Rate,EMEA,Risk Analytics,count,2259,1787,Calculated
+STR Quality Score,EMEA,Risk Analytics,count,580,157,Reported
+Sanctions Screening Matches,EMEA,Risk Analytics,count,3836,3275,Reported
+EDD Completion Rate,NA,Compliance,rate,73,88,Estimated
+Transaction Monitoring Alerts,EMEA,Compliance,count,4538,4266,Reported
+High-Risk Customer Count,EMEA,AFC Ops,count,4171,3648,Estimated
+Custom Metric 13,NA,AFC Ops,count,4850,4583,Estimated
+Custom Metric 14,NA,Risk Analytics,count,3784,3569,Estimated
+Custom Metric 15,APAC,AML Investigations,rate,51,38,Reported
+Custom Metric 16,LATAM,AML Investigations,score,12,14,Reported
+Custom Metric 17,NA,Risk Analytics,count,1207,1957,Estimated
+Custom Metric 18,EMEA,AML Investigations,%,88,87,Estimated
+Custom Metric 19,NA,Risk Analytics,count,2530,3325,Estimated
+Custom Metric 20,APAC,AML Investigations,count,4331,3616,Calculated
+Custom Metric 21,NA,Risk Analytics,score,58,48,Estimated
+Custom Metric 22,APAC,AFC Ops,%,9,15,Reported
+Custom Metric 23,NA,Compliance,rate,81,82,Estimated
+Custom Metric 24,EMEA,AML Investigations,count,2020,2790,Reported
+Custom Metric 25,APAC,Compliance,%,26,17,Calculated
+Custom Metric 26,LATAM,Compliance,score,53,50,Calculated
+Custom Metric 27,NA,Compliance,score,33,34,Calculated
+Custom Metric 28,EMEA,AFC Ops,rate,32,29,Calculated
+Custom Metric 29,APAC,AFC Ops,%,42,43,Reported
+Custom Metric 30,LATAM,Risk Analytics,count,2117,1622,Reported
+Custom Metric 31,APAC,AML Investigations,rate,16,20,Reported
+Custom Metric 32,NA,Compliance,count,4123,3382,Estimated
+Custom Metric 33,APAC,Compliance,%,70,72,Estimated
+Custom Metric 34,NA,Risk Analytics,rate,10,24,Calculated
+Custom Metric 35,LATAM,Compliance,score,73,62,Reported
+Custom Metric 36,NA,Risk Analytics,score,26,31,Estimated
+Custom Metric 37,NA,Risk Analytics,count,734,543,Reported
+Custom Metric 38,LATAM,AFC Ops,count,1153,1352,Estimated
+Custom Metric 39,LATAM,Compliance,rate,0,1,Reported
+Custom Metric 40,EMEA,Compliance,%,74,78,Estimated
+Custom Metric 41,NA,AFC Ops,%,50,50,Estimated
+Custom Metric 42,APAC,Risk Analytics,%,76,79,Estimated
+Custom Metric 43,NA,Risk Analytics,score,82,84,Calculated
+Custom Metric 44,NA,Risk Analytics,rate,0,1,Reported
+Custom Metric 45,APAC,Risk Analytics,count,2606,2785,Estimated
+Custom Metric 46,EMEA,Risk Analytics,rate,15,25,Estimated
+Custom Metric 47,APAC,AFC Ops,count,4734,4344,Reported
+Custom Metric 48,APAC,Risk Analytics,count,4242,4094,Reported
+Custom Metric 49,APAC,AML Investigations,rate,33,16,Calculated
+Custom Metric 50,LATAM,Risk Analytics,rate,26,38,Calculated
+Custom Metric 51,LATAM,Compliance,%,47,58,Estimated
+Custom Metric 52,EMEA,AFC Ops,%,76,73,Calculated
+Custom Metric 53,LATAM,Risk Analytics,%,76,92,Calculated
+Custom Metric 54,NA,Risk Analytics,count,4809,4586,Reported
+Custom Metric 55,NA,AML Investigations,count,710,143,Estimated
+Custom Metric 56,NA,AML Investigations,count,3505,2738,Estimated
+Custom Metric 57,APAC,AFC Ops,score,50,55,Reported
+Custom Metric 58,EMEA,AML Investigations,score,96,91,Reported
+Custom Metric 59,LATAM,Risk Analytics,%,68,70,Estimated
+Custom Metric 60,LATAM,AFC Ops,%,73,76,Estimated
+Custom Metric 61,NA,AFC Ops,rate,49,52,Reported
+Custom Metric 62,APAC,Compliance,score,33,42,Calculated
+Custom Metric 63,EMEA,Risk Analytics,%,54,59,Estimated
+Custom Metric 64,EMEA,AFC Ops,score,53,49,Estimated
+Custom Metric 65,LATAM,AML Investigations,count,3490,3732,Estimated
+Custom Metric 66,EMEA,Compliance,count,296,1020,Calculated
+Custom Metric 67,APAC,AFC Ops,rate,19,22,Estimated
+Custom Metric 68,LATAM,AFC Ops,rate,2,0,Reported
+Custom Metric 69,EMEA,AML Investigations,rate,50,54,Calculated

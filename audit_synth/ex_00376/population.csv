@@ -1,0 +1,150 @@
+Metric,Region,Owner,Unit,Q2_2024,Q3_2024,SourceType
+High-Risk Customer Count,LATAM,AML Investigations,count,3,157,Estimated
+False Positive Rate,LATAM,Compliance,count,2320,2287,Estimated
+Adverse Media Hits,APAC,Risk Analytics,score,50,66,Estimated
+Alert Clearance SLA Breaches,APAC,Risk Analytics,score,21,26,Estimated
+Sanctions Screening Matches,EMEA,Risk Analytics,score,82,94,Calculated
+SAR Filing Timeliness,EMEA,Compliance,count,1001,829,Estimated
+STR Quality Score,LATAM,Risk Analytics,rate,16,10,Reported
+Case Backlog Volume,LATAM,AFC Ops,rate,18,26,Reported
+KYC Exceptions Rate,NA,AML Investigations,rate,75,62,Estimated
+Transaction Monitoring Alerts,LATAM,Compliance,score,34,31,Estimated
+PEP Screening Hits,EMEA,AFC Ops,score,57,66,Reported
+EDD Completion Rate,NA,AML Investigations,score,86,82,Estimated
+Custom Metric 13,EMEA,Compliance,score,87,84,Reported
+Custom Metric 14,APAC,AFC Ops,score,64,49,Estimated
+Custom Metric 15,APAC,Risk Analytics,score,80,71,Calculated
+Custom Metric 16,NA,AML Investigations,score,58,63,Calculated
+Custom Metric 17,LATAM,AFC Ops,count,739,1518,Calculated
+Custom Metric 18,EMEA,Compliance,count,3468,4203,Calculated
+Custom Metric 19,NA,AML Investigations,%,35,30,Calculated
+Custom Metric 20,EMEA,Risk Analytics,count,4809,4250,Reported
+Custom Metric 21,EMEA,Compliance,count,2322,3099,Estimated
+Custom Metric 22,EMEA,Compliance,rate,98,87,Calculated
+Custom Metric 23,EMEA,Risk Analytics,score,24,27,Reported
+Custom Metric 24,APAC,Risk Analytics,%,44,44,Estimated
+Custom Metric 25,NA,Risk Analytics,%,62,48,Estimated
+Custom Metric 26,LATAM,Risk Analytics,count,1047,1680,Estimated
+Custom Metric 27,APAC,AFC Ops,%,93,88,Estimated
+Custom Metric 28,EMEA,Compliance,count,3954,4744,Calculated
+Custom Metric 29,NA,Risk Analytics,rate,26,31,Calculated
+Custom Metric 30,LATAM,Compliance,%,8,20,Calculated
+Custom Metric 31,APAC,AFC Ops,rate,62,57,Estimated
+Custom Metric 32,NA,AFC Ops,count,3545,4336,Reported
+Custom Metric 33,NA,AFC Ops,count,2560,1774,Reported
+Custom Metric 34,LATAM,Compliance,score,55,51,Calculated
+Custom Metric 35,NA,Compliance,rate,51,57,Calculated
+Custom Metric 36,APAC,Compliance,count,4015,3239,Calculated
+Custom Metric 37,LATAM,Compliance,rate,93,90,Reported
+Custom Metric 38,NA,AFC Ops,count,1023,555,Calculated
+Custom Metric 39,APAC,AML Investigations,rate,53,50,Reported
+Custom Metric 40,NA,Compliance,rate,61,53,Estimated
+Custom Metric 41,APAC,Risk Analytics,count,912,1045,Reported
+Custom Metric 42,APAC,Compliance,%,32,33,Estimated
+Custom Metric 43,APAC,AFC Ops,rate,5,0,Estimated
+Custom Metric 44,APAC,Compliance,count,1445,1867,Reported
+Custom Metric 45,APAC,Risk Analytics,%,100,101,Estimated
+Custom Metric 46,EMEA,Risk Analytics,score,64,61,Calculated
+Custom Metric 47,NA,Risk Analytics,rate,92,98,Reported
+Custom Metric 48,LATAM,Compliance,score,42,46,Calculated
+Custom Metric 49,EMEA,AML Investigations,%,47,53,Calculated
+Custom Metric 50,APAC,AML Investigations,%,44,53,Estimated
+Custom Metric 51,APAC,AML Investigations,%,94,102,Calculated
+Custom Metric 52,LATAM,AFC Ops,score,2,17,Reported
+Custom Metric 53,APAC,AFC Ops,count,254,0,Reported
+Custom Metric 54,LATAM,Compliance,count,4287,4095,Calculated
+Custom Metric 55,APAC,AFC Ops,%,17,32,Reported
+Custom Metric 56,NA,Risk Analytics,count,4383,3892,Calculated
+Custom Metric 57,LATAM,Risk Analytics,count,4077,3549,Estimated
+Custom Metric 58,LATAM,AML Investigations,score,8,2,Reported
+Custom Metric 59,EMEA,Compliance,score,41,29,Estimated
+Custom Metric 60,LATAM,AML Investigations,rate,8,0,Reported
+Custom Metric 61,LATAM,Risk Analytics,rate,70,75,Estimated
+Custom Metric 62,APAC,Compliance,count,328,0,Reported
+Custom Metric 63,NA,AML Investigations,rate,101,97,Calculated
+Custom Metric 64,NA,Compliance,count,934,989,Estimated
+Custom Metric 65,NA,Compliance,score,42,42,Calculated
+Custom Metric 66,APAC,AFC Ops,score,34,30,Reported
+Custom Metric 67,LATAM,AML Investigations,%,20,29,Estimated
+Custom Metric 68,NA,Compliance,count,1604,2213,Calculated
+Custom Metric 69,EMEA,Compliance,score,24,30,Calculated
+Custom Metric 70,APAC,AFC Ops,rate,76,68,Estimated
+Custom Metric 71,APAC,AML Investigations,%,55,58,Calculated
+Custom Metric 72,EMEA,Risk Analytics,count,4436,4098,Reported
+Custom Metric 73,NA,AML Investigations,rate,64,50,Reported
+Custom Metric 74,APAC,AFC Ops,rate,19,13,Estimated
+Custom Metric 75,EMEA,AFC Ops,%,103,87,Calculated
+Custom Metric 76,NA,AFC Ops,score,39,48,Calculated
+Custom Metric 77,APAC,AFC Ops,count,4726,5111,Calculated
+Custom Metric 78,EMEA,Compliance,rate,92,87,Reported
+Custom Metric 79,EMEA,AML Investigations,rate,84,78,Calculated
+Custom Metric 80,EMEA,Compliance,count,3666,3739,Calculated
+Custom Metric 81,APAC,AML Investigations,%,47,38,Reported
+Custom Metric 82,EMEA,AFC Ops,count,1771,1095,Estimated
+Custom Metric 83,EMEA,AML Investigations,%,16,24,Reported
+Custom Metric 84,NA,Compliance,%,44,28,Estimated
+Custom Metric 85,LATAM,AML Investigations,count,4022,3682,Reported
+Custom Metric 86,APAC,Risk Analytics,%,60,70,Estimated
+Custom Metric 87,NA,AFC Ops,score,22,23,Reported
+Custom Metric 88,LATAM,Risk Analytics,count,2187,2392,Estimated
+Custom Metric 89,NA,Compliance,rate,64,68,Reported
+Custom Metric 90,APAC,AML Investigations,count,1468,2234,Calculated
+Custom Metric 91,APAC,Risk Analytics,score,16,19,Reported
+Custom Metric 92,LATAM,Compliance,count,4586,5247,Estimated
+Custom Metric 93,EMEA,Compliance,score,35,47,Estimated
+Custom Metric 94,APAC,AML Investigations,count,1712,2317,Calculated
+Custom Metric 95,APAC,Compliance,count,1224,1930,Estimated
+Custom Metric 96,APAC,Compliance,count,628,954,Estimated
+Custom Metric 97,APAC,AFC Ops,score,0,0,Estimated
+Custom Metric 98,NA,AFC Ops,rate,34,26,Calculated
+Custom Metric 99,EMEA,AML Investigations,rate,54,63,Estimated
+Custom Metric 100,LATAM,AML Investigations,count,3115,3574,Reported
+Custom Metric 101,LATAM,Risk Analytics,%,10,0,Estimated
+Custom Metric 102,EMEA,AML Investigations,score,18,31,Calculated
+Custom Metric 103,APAC,AFC Ops,rate,54,40,Reported
+Custom Metric 104,LATAM,AFC Ops,%,21,21,Estimated
+Custom Metric 105,NA,AML Investigations,count,3136,2517,Estimated
+Custom Metric 106,NA,Risk Analytics,count,2893,3635,Reported
+Custom Metric 107,NA,Compliance,count,4172,3871,Estimated
+Custom Metric 108,APAC,AFC Ops,count,4633,4574,Calculated
+Custom Metric 109,EMEA,Compliance,count,279,202,Calculated
+Custom Metric 110,EMEA,AML Investigations,score,49,54,Reported
+Custom Metric 111,LATAM,AFC Ops,%,13,3,Reported
+Custom Metric 112,NA,AML Investigations,score,95,85,Estimated
+Custom Metric 113,NA,AFC Ops,count,2720,2649,Reported
+Custom Metric 114,APAC,AFC Ops,score,2,0,Reported
+Custom Metric 115,LATAM,AFC Ops,%,83,77,Estimated
+Custom Metric 116,EMEA,AML Investigations,score,61,59,Estimated
+Custom Metric 117,APAC,Compliance,count,2557,2084,Estimated
+Custom Metric 118,NA,Compliance,count,917,744,Calculated
+Custom Metric 119,NA,Risk Analytics,rate,30,35,Estimated
+Custom Metric 120,NA,AML Investigations,rate,102,85,Reported
+Custom Metric 121,APAC,AML Investigations,%,74,63,Estimated
+Custom Metric 122,EMEA,Compliance,rate,41,37,Calculated
+Custom Metric 123,APAC,Compliance,%,45,31,Calculated
+Custom Metric 124,EMEA,AML Investigations,%,41,34,Reported
+Custom Metric 125,APAC,Risk Analytics,count,4819,5251,Estimated
+Custom Metric 126,EMEA,AFC Ops,score,99,90,Calculated
+Custom Metric 127,LATAM,Compliance,count,624,333,Calculated
+Custom Metric 128,EMEA,AML Investigations,count,653,459,Calculated
+Custom Metric 129,LATAM,AML Investigations,count,1357,579,Reported
+Custom Metric 130,LATAM,AFC Ops,count,1029,1103,Calculated
+Custom Metric 131,LATAM,AFC Ops,count,2546,2747,Calculated
+Custom Metric 132,APAC,AFC Ops,count,694,0,Calculated
+Custom Metric 133,EMEA,Risk Analytics,%,81,88,Calculated
+Custom Metric 134,APAC,AFC Ops,%,40,47,Estimated
+Custom Metric 135,LATAM,AML Investigations,rate,81,66,Estimated
+Custom Metric 136,NA,AML Investigations,count,1606,1334,Reported
+Custom Metric 137,NA,AML Investigations,count,3745,3531,Estimated
+Custom Metric 138,APAC,Risk Analytics,score,10,8,Calculated
+Custom Metric 139,APAC,Risk Analytics,count,980,1248,Calculated
+Custom Metric 140,EMEA,Risk Analytics,count,842,575,Calculated
+Custom Metric 141,EMEA,Risk Analytics,score,64,55,Calculated
+Custom Metric 142,LATAM,AML Investigations,count,536,829,Reported
+Custom Metric 143,LATAM,Risk Analytics,score,93,88,Calculated
+Custom Metric 144,NA,AML Investigations,count,1341,992,Reported
+Custom Metric 145,APAC,AFC Ops,%,35,28,Reported
+Custom Metric 146,LATAM,AML Investigations,count,651,1248,Reported
+Custom Metric 147,APAC,Compliance,%,53,44,Reported
+Custom Metric 148,LATAM,AFC Ops,score,14,5,Reported
+Custom Metric 149,APAC,AFC Ops,%,69,66,Calculated
