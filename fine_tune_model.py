@@ -50,7 +50,7 @@ def main():
     sft_config = SFTConfig(
         output_dir=args.out_dir,
         seed=args.seed,
-        # max_seq_length=args.max_seq_len,
+        max_length=args.max_seq_len,
         num_train_epochs=args.epochs,
         learning_rate=args.lr,
         per_device_train_batch_size=args.batch_size,

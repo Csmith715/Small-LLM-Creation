@@ -11,7 +11,7 @@ def collect_csv_data(root_dir):
     for csv_file in csv_files:
         df = pd.read_csv(csv_file)
         df = df.rename(columns={"Q2_2024": "Q2", "Q3_2024": "Q3"})
-        df = df[['Q2', 'Q3']]
+        df = df[['Q2', 'Q3']].head(5)
         df['Variance'] = [round(((a - b)/b)*100, 0) if b != 0 else 0 for a, b in zip(df['Q2'], df['Q3'])]
         list_of_dataframes.append(df)
     return list_of_dataframes
