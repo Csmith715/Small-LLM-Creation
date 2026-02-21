@@ -200,7 +200,7 @@ def select_audit_sample(
     """
     rng = np.random.default_rng(seed)
     df = df.sample(frac=1).reset_index(drop=True)
-    df = df.head(np.random.randint(25,100))
+    df = df.head(np.random.randint(25, 50))
     out = df.copy()
     out[sample_col] = ""
     sample_size = calc_sample_size(out.shape[0])
