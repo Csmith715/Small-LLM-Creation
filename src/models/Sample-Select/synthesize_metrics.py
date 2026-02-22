@@ -12,7 +12,7 @@ import os
 from typing import Set
 import numpy as np
 import pandas as pd
-from utils import calc_sample_size
+from src.utils.utils import calc_sample_size
 
 # Generation Configuration
 

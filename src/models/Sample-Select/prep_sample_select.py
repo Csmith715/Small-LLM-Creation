@@ -2,7 +2,7 @@ import argparse
 import pandas as pd
 import json
 from pathlib import Path
-from utils import calc_sample_size
+from src.utils.utils import calc_sample_size
 
 
 def find_csv_data(root_dir):

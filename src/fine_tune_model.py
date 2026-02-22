@@ -6,6 +6,13 @@ from peft import LoraConfig
 from trl import SFTTrainer, SFTConfig
 
 
+def get_device():
+    if torch.cuda.is_available():
+        return "cuda"
+    if torch.backends.mps.is_available():
+        return "mps"
+    return "cpu"
+
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--model_id", default="Qwen/Qwen2.5-1.5B-Instruct")
@@ -28,14 +35,15 @@ def main():
     tokenizer = AutoTokenizer.from_pretrained(args.model_id, use_fast=True)
     if tokenizer.pad_token is None:
         tokenizer.pad_token = tokenizer.eos_token
-    device = torch.device("mps" if torch.backends.mps.is_available() else "cpu")
+    has_cuda = torch.cuda.is_available()
+    # has_mps = torch.backends.mps.is_available()
+    # device = "cuda" if has_cuda else "mps" if has_mps else "cpu"
     model = AutoModelForCausalLM.from_pretrained(
         args.model_id,
-        dtype=torch.bfloat16 if torch.cuda.is_available() else torch.float32,
-        device_map=None,
-        low_cpu_mem_usage=False,
+        dtype=torch.bfloat16 if has_cuda else torch.float32,
+        device_map='auto',
+        low_cpu_mem_usage=True,
     )
-    model.to(device)
 
     # LoRA config
     peft_config = LoraConfig(
@@ -59,7 +67,7 @@ def main():
         # evaluation_strategy="epoch",
         save_strategy="epoch",
         logging_steps=10,
-        bf16=torch.cuda.is_available(),
+        bf16=has_cuda,
         fp16=False,
         packing=False,
         # dataset_text_field=None,

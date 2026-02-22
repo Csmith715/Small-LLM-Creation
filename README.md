@@ -19,17 +19,18 @@ uv sync --extras dev
 
 For the Sample Size LLM example:
 ```bash
-python fine_tune_model.py \
+python src/fine_tune_model.py \
 --model_id Qwen/Qwen2.5-1.5B-Instruct \
---train_jsonl Sample-Size-LLM/train.jsonl \
---val_jsonl Sample-Size-LLM/val.jsonl
+--train_jsonl src/models/Sample-Size-LLM/train.jsonl \
+--val_jsonl src/models/Sample-Size-LLM/val.jsonl
 ```
-This will fine-tune the Qwen2.5 model on a previously created dataset.
+This will fine-tune the Qwen2.5 model on a previously created dataset. It assumes a max sequence length of 256 tokens. 
+However, this parameter can be modified with a `--max_seq_len` flag.
 
 ### Carry out inference on the model
 
 ```python
-from fine_tune_inference import FineTuneInference
+from src.fine_tune_inference import FineTuneInference
 
 message = [
     {
@@ -41,7 +42,7 @@ message = [
     }
 ]
 
-inference = FineTuneInference(adapter_dir='Sample-Size-LLM/sample-size-sft-lora')
+inference = FineTuneInference(adapter_dir='src/models/Sample-Size-LLM/sample-size-sft-lora')
 inference.generate(message)
 ```
 In most situations, both the fine-tuning and inference steps can be applied to any dataset.
@@ -54,7 +55,7 @@ This script will create a directory of 400 synthetic data examples. Each example
 csv file `population.csv` and a summary JSON file `sample_size_calculation.json` that statistical inferences from the csv file.
 
 ```bash
-python Sample-Size-LLM/make_audit_sample_size_synth.py --n_examples 400 --write_sft_jsonl
+python src/models/Sample-Size-LLM/make_audit_sample_size_synth.py --n_examples 400 --write_sft_jsonl
 ```
 
 An example of the output JSON file is shown below:
@@ -83,10 +84,10 @@ This script will create a train and test dataset from the synthetic data example
 directory created in the previous step. It also formats the data into an acceptable messaging format for fine-tuning.
 
 ```bash
-python Sample-Size-LLM/prep_training_data.py \
- --root_directory "audit_synth" \
- --out_train Sample-Size-LLM/train.jsonl \
- --out_val Sample-Size-LLM/val.jsonl
+python src/models/Sample-Size-LLM/prep_training_data.py \
+ --root_directory "data/audit_synth" \
+ --out_train src/models/Sample-Size-LLM/train.jsonl \
+ --out_val src/models/Sample-Size-LLM/val.jsonl
 ```
 Each training example will have the following structure:
 ```json
