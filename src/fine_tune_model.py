@@ -5,14 +5,6 @@ from transformers import AutoTokenizer, AutoModelForCausalLM
 from peft import LoraConfig
 from trl import SFTTrainer, SFTConfig
 
-
-def get_device():
-    if torch.cuda.is_available():
-        return "cuda"
-    if torch.backends.mps.is_available():
-        return "mps"
-    return "cpu"
-
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--model_id", default="Qwen/Qwen2.5-1.5B-Instruct")
