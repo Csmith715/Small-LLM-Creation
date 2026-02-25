@@ -4,6 +4,7 @@ from peft import PeftModel
 import os
 from sentence_transformers import SentenceTransformer, util
 import pandas as pd
+from pathlib import Path
 
 os.environ["TRANSFORMERS_VERBOSITY"] = "error"
 
@@ -109,11 +110,15 @@ class FineTuneInference:
         return sims.mean().item()
 
     def score_predictions(self, evaluated_file_path: str):
-        df = pd.read_csv(evaluated_file_path).astype(str)
+        file_path = Path(evaluated_file_path)
+        df = pd.read_csv(file_path).astype(str)
         if "predicted" in df.columns:
             df = df.rename(columns={"predicted": "predictions"})
         emb1 = self.st_model.encode(df['actual'].tolist(), convert_to_tensor=True, normalize_embeddings=True)
         emb2 = self.st_model.encode(df['predictions'].tolist(), convert_to_tensor=True, normalize_embeddings=True)
         sims = util.pairwise_cos_sim(emb1, emb2)
+        df['similarity'] = sims.tolist()
+        new_file_name = file_path.stem + '_modified.csv'
+        df.to_csv(file_path.with_name(new_file_name), index=False)
 
         return sims.mean().item()
