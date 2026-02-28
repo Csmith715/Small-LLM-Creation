@@ -4,6 +4,7 @@ from datasets import load_dataset
 from transformers import AutoTokenizer, AutoModelForCausalLM
 from peft import LoraConfig
 from trl import SFTTrainer, SFTConfig
+from transformers import BitsAndBytesConfig
 
 def main():
     ap = argparse.ArgumentParser()
@@ -19,10 +20,7 @@ def main():
     ap.add_argument("--seed", type=int, default=42)
     args = ap.parse_args()
 
-    ds = load_dataset(
-        "json",
-        data_files={"train": args.train_jsonl, "validation": args.val_jsonl},
-    )
+    ds = load_dataset("json", data_files={"train": args.train_jsonl, "validation": args.val_jsonl})
 
     tokenizer = AutoTokenizer.from_pretrained(args.model_id, use_fast=True)
     if tokenizer.pad_token is None:
@@ -30,12 +28,24 @@ def main():
     has_cuda = torch.cuda.is_available()
     # has_mps = torch.backends.mps.is_available()
     # device = "cuda" if has_cuda else "mps" if has_mps else "cpu"
+    bnb_config = BitsAndBytesConfig(
+        load_in_4bit=True,
+        bnb_4bit_quant_type="nf4",
+        bnb_4bit_use_double_quant=True,
+        bnb_4bit_compute_dtype=torch.bfloat16 if has_cuda else torch.float32,
+    )
+    attn_impl = "sdpa"
     model = AutoModelForCausalLM.from_pretrained(
         args.model_id,
         dtype=torch.bfloat16 if has_cuda else torch.float32,
-        device_map='auto',
+        device_map='auto',  # Need to use None and uncomment the device line above if run locally
+        quantization_config=bnb_config,
+        attn_implementation=attn_impl,
         low_cpu_mem_usage=True,
     )
+
+    model.config.use_cache = False
+    model.gradient_checkpointing_enable()
 
     # LoRA config
     peft_config = LoraConfig(
@@ -56,14 +66,16 @@ def main():
         per_device_train_batch_size=args.batch_size,
         per_device_eval_batch_size=args.batch_size,
         gradient_accumulation_steps=args.grad_accum,
-        # evaluation_strategy="epoch",
+        gradient_checkpointing=True,
         save_strategy="epoch",
         logging_steps=10,
         bf16=has_cuda,
         fp16=False,
         packing=False,
-        # dataset_text_field=None,
         report_to="none",
+        optim="paged_adamw_8bit",
+        dataset_text_field="messages",
+        max_grad_norm=1.0,
     )
 
     trainer = SFTTrainer(
