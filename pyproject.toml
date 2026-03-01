@@ -6,6 +6,7 @@ readme = "README.md"
 requires-python = ">=3.10,<3.13"
 
 dependencies = [
+  "bitsandbytes>=0.46.1",
   "torch>=2.2",
   "torchvision",
   "torchaudio",
