@@ -2,3 +2,4 @@ data/audit_synth
 data/synthetic_select_data
 src/models/Sample-Size-LLM/sample-size-sft-lora
 /.idea/shelf
+notebooks/.env
