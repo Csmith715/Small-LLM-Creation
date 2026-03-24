@@ -25,9 +25,10 @@ class BrandDocTools:
     def __init__(self, state: BrandDocState):
         self.state = state
 
+    # I may want to change this
     def draft_brand_data_gathering_content(self) -> str:
         """
-        Creates the document content deterministically.
+        This Creates the document content deterministically.
         This is intentionally not delegated to the model because the task is stable, and
         we want a predictable output for a small SLM pipeline.
         """
